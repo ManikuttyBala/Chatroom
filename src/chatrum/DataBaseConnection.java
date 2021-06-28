@@ -13,7 +13,7 @@ public class DataBaseConnection {
     DataBaseConnection(){
     try{
         
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             con=DriverManager.getConnection("jdbc:mysql://localhost:3306/chatrumdb","root","");
             smt = con.createStatement();
         
